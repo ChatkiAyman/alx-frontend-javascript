@@ -9,11 +9,11 @@
  * the values in the set that start with the given string.
  */
 function cleanSet(set, startString) {
-    if (!startString || typeof startString !== 'string') {
-      return '';
-    }
-    return [...set]
-      .filter((value) => value.startsWith(startString))
-      .map((value) => value.slice(startString.length))
-      .join('-');
-  } export default cleanSet;
+  if (!startString || typeof startString !== 'string') {
+    return '';
+  }
+  return [...set]
+    .filter((value) => value.startsWith(startString))
+    .map((value) => value.slice(startString.length))
+    .join('-');
+} export default cleanSet;
