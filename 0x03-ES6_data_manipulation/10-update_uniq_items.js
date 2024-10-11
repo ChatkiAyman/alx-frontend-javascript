@@ -1,6 +1,6 @@
 function updateUniqueItems(map) {
   if (!(map instanceof Map)) {
-    throw new Error('The first argument must be a Map instance.');
+    throw new Error('Cannot process');
   }
   /*
       the code below is to update
